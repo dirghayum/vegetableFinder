@@ -16,10 +16,10 @@ public class ProductReader {
 
     public static final String FILE_NAME= "src/main/resources/data/vegetables.txt";
 
-    public static Set<Pair<String, String>> vegetableList = new LinkedHashSet<>();
+    public  List<Pair<String, String>> vegetableList = new ArrayList<>();
 
 
-    public Set<Pair<String, String>> readProducts()  {
+    public List<Pair<String, String>> readProducts()  {
         Pair<String,String> pair;
         FileReader fr = null;
         BufferedReader br = null;
